@@ -175,3 +175,5 @@ Distributed under the MIT License. See `LICENSE` file for full text.
 Email: [uphilentuli43@gmail.com](mailto:uphilentuli43@gmail.com)  
 GitHub: [@kidlitty](https://github.com/kidlitty)  
 Project Repository: [Blogging-Platform-API](https://github.com/kidlitty/Blogging-Platform-API)
+
+https://roadmap.sh/projects/blogging-platform-api
