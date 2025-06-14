@@ -1,195 +1,112 @@
-📝 Blogging Platform API
+<div align="center">
+  <br />
+  <img src="https://raw.githubusercontent.com/panacloud-modern-apis-apps/learn-nextjs-13-and-spring-boot-3/main/11_learn-spring-boot-3/01_creating-a-modern-blogging-platform-api-with-spring-boot/images/spring-boot-logo.png" alt="Logo" width="120" height="120">
+  <h1 align="center">Modern Blogging Platform API</h1>
+  <p align="center">
+    A robust RESTful API for a complete blogging platform, built with Java and the Spring Boot framework.
+    <br />
+    <a href="#about-the-project"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="#-api-endpoints-guide">View API Endpoints</a>
+    ·
+    <a href="https://github.com/YOUR_USERNAME/YOUR_REPO/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/YOUR_USERNAME/YOUR_REPO/issues">Request Feature</a>
+  </p>
+</div>
 
-A robust and secure RESTful API serving as the backend for a modern blogging platform. Developed with Spring Boot, this is a prototype project demonstrating core backend development concepts. It provides comprehensive functionalities for content management, user authentication, and role-based authorization, showcasing a strong foundation in backend development best practices.
-✨ Core Features
+<div align="center">
+  <img src="https://img.shields.io/badge/Java-17-blue?logo=java&logoColor=white" alt="Java 17">
+  <img src="https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen?logo=spring&logoColor=white" alt="Spring Boot 3.x">
+  <img src="https://img.shields.io/badge/Maven-4.0-red?logo=apache-maven&logoColor=white" alt="Maven">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT">
+  <img src="https://img.shields.io/github/stars/YOUR_USERNAME/YOUR_REPO?style=social" alt="GitHub stars">
+</div>
 
-    Secure User Authentication & Authorization: Implements a stateless, token-based security model using JSON Web Tokens (JWT). Supports user registration, login, and robust role-based access control (ROLE_USER, ROLE_ADMIN) for protecting sensitive endpoints.
+<br/>
 
-    Comprehensive Content Management: Provides full CRUD (Create, Read, Update, Delete) operations for blog posts, categories, and tags.
+---
 
-    Automatic Author Assignment: Posts are automatically linked to the authenticated user who created them, ensuring proper content attribution.
+## Table of Contents
 
-    Flexible Data Relationships: Posts are effectively linked to categories (many-to-one) and tags (many-to-many), demonstrating strong relational database design.
+- [About The Project](#about-the-project)
+- [Tech Stack](#-tech-stack)
+- [Key Features](#-key-features)
+- [Getting Started](#-getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Running the Application](#-running-the-application)
+- [API Endpoints Guide](#-api-endpoints-guide)
+- [Running Tests](#-running-tests)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Contact](#-contact)
 
-    Public & Protected Access: Allows public read access to all posts, categories, and tags, while requiring authentication for content modification operations.
+---
 
-    Developer-Friendly API Documentation: Integrated Swagger UI provides interactive documentation for easy endpoint exploration and testing.
+## About The Project
 
-🛠️ Tech Stack
+This project provides a complete and scalable backend API for a modern blogging platform. It is built on a clean architecture, separating concerns for maintainability and ease of development. The API supports full CRUD operations for posts, categories, and tags, along with a secure JWT-based authentication system for user management.
 
-Leveraging industry-standard tools and frameworks to build a scalable and maintainable backend.
+It serves as a strong foundation for any front-end application (web or mobile) to build a feature-rich blogging experience.
 
-Technology
+---
 
+## 🛠️ Tech Stack
 
-Icon
+This project is built with a modern and robust set of technologies:
 
+| Backend                                     | Database                               | Build & Tooling                                |
+| ------------------------------------------- | -------------------------------------- | ---------------------------------------------- |
+| ![Java](https://img.shields.io/badge/Java-17-blue?logo=java&logoColor=white) | ![H2](https://img.shields.io/badge/H2-InMemory-orange?logo=h2&logoColor=white) | ![Maven](https://img.shields.io/badge/Maven-4.0-red?logo=apache-maven&logoColor=white) |
+| ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen?logo=spring&logoColor=white) | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Ready-blue?logo=postgresql&logoColor=white) | ![Postman](https://img.shields.io/badge/Postman-API%20Testing-orange?logo=postman&logoColor=white) |
+| ![Spring Security](https://img.shields.io/badge/Spring%20Security-6.x-green?logo=spring-security&logoColor=white) |                                        | ![Git](https://img.shields.io/badge/Git-VCS-orange?logo=git&logoColor=white) |
+| ![JWT](https://img.shields.io/badge/JWT-Authentication-purple?logo=json-web-tokens&logoColor=white) |                                        |                                                |
 
-Description
+---
 
-Java 22
+## ✨ Key Features
 
+- **Full CRUD Operations:** For Posts, Categories, and Tags.
+- **Secure Authentication:** JWT-based user registration and login.
+- **Author Attribution:** Posts are automatically linked to the logged-in author.
+- **Data Validation:** Incoming data is validated to ensure integrity.
+- **Centralized Exception Handling:** Consistent and meaningful error responses.
+- **Relational Data Model:** Well-defined relationships between Posts, Categories, and Tags.
+- **DTO Pattern:** Clean separation between internal entities and external API models.
 
-The foundational language, chosen for its robustness, performance, and extensive ecosystem.
+---
 
-Spring Boot 3.x
+## 🚀 Getting Started
 
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-Streamlines standalone, production-grade Spring applications, minimizing boilerplate and simplifying configuration.
+### Prerequisites
 
-Spring Security
+You will need the following software installed on your machine:
+* **Java Development Kit (JDK)**: Version 17 or higher.
+* **Apache Maven**: Version 3.8 or higher.
+* **Git**: For cloning the repository.
+* An API testing tool like **Postman** or **Insomnia**.
 
+### Installation
 
-The go-to framework for authentication and authorization in Spring applications, ensuring robust security.
-
-JWT (jjwt)
-
-
-Enables stateless, secure API communication by verifying user identity and permissions through cryptographic tokens.
-
-Spring Data JPA
-
-
-Simplifies database interactions with powerful repository abstractions, reducing data access code.
-
-Hibernate
-
-
-The ORM (Object-Relational Mapping) solution, effectively bridging Java objects with relational database tables.
-
-H2 Database
-
-
-An in-memory, file-based relational database used for efficient local development and testing.
-
-Maven
-
-
-The primary build automation tool, managing dependencies and standardizing the project build lifecycle.
-
-Lombok
-
-
-A productivity tool that reduces boilerplate code in Java classes (e.g., getters, setters, constructors).
-
-MapStruct
-
-
-A code generator for type-safe and performant object mapping between entities and DTOs, crucial for clean API contracts.
-
-Swagger UI
-
-
-Generates interactive API documentation directly from code, enabling easy exploration and testing of endpoints.
-
-Postman
-
-
-(Recommended) A comprehensive API platform used for efficient development, testing, and documentation of API endpoints.
-🚀 Getting Started
-
-Follow these steps to get the Blogging Platform API up and running on your local machine.
-Prerequisites
-
-Ensure you have the following installed:
-
-    Java Development Kit (JDK) 22 or higher
-
-    Apache Maven 3.8.x or higher
-
-    An Integrated Development Environment (IDE) like IntelliJ IDEA (Community Edition is highly recommended for Spring Boot development).
-
-    (Optional but Recommended) Postman for interacting with the API.
-
-Setup Instructions
-
-    Clone the Repository:
-
-    git clone <repository-url> # Replace with your project's repository URL
-    cd blogging-platform-api
-
-
-    Build the Project:
-    Navigate to the project's root directory (where pom.xml is located) and execute the Maven build command. This compiles the source code, runs tests, and resolves all dependencies.
-
+1.  **Clone the repository**
+    ```sh
+    git clone [https://github.com/YOUR_USERNAME/YOUR_REPO.git](https://github.com/YOUR_USERNAME/YOUR_REPO.git)
+    cd YOUR_REPO
+    ```
+2.  **Install Maven dependencies**
+    This command will download all the necessary libraries defined in the `pom.xml`.
+    ```sh
     mvn clean install
+    ```
+---
 
+## ▶️ Running the Application
 
-    Run the Application:
-    Start the Spring Boot application using Maven:
+Once the dependencies are installed, you can run the application using the Spring Boot Maven plugin:
 
-    mvn spring-boot:run
-
-
-    Alternatively, open the project in your IDE and run the main method within src/main/java/com/kidlitty/blogging_platform_api/BloggingPlatformApiApplication.java.
-
-    The application will typically start on http://localhost:8080.
-
-Local Development Environment Details
-
-    In-Memory H2 Database: Configured for rapid development, the H2 database (jdbc:h2:mem:blogdb) resets its data on every application restart.
-
-    JWT Secret Management: For local convenience, the API automatically generates and persists the JWT secret key to a jwt.key file in the project root on its first run, ensuring token validity across restarts within a development session.
-
-    H2 Console Access: You can inspect the database directly via the H2 Console at http://localhost:8080/h2-console.
-
-        JDBC URL: jdbc:h2:mem:blogdb
-
-        User Name: sa
-
-        Password: (leave blank)
-
-💡 API Endpoint Guide
-
-The API adheres to RESTful conventions, with all core endpoints accessible under the /api prefix.
-🌐 Interactive API Documentation
-
-Explore all available endpoints, their parameters, and expected responses using Swagger UI:
-➡️ http://localhost:8080/swagger-ui.html
-🔑 Authentication Flow
-
-All endpoints requiring user authentication expect a JWT provided in the Authorization header as a Bearer token (e.g., Authorization: Bearer YOUR_GENERATED_JWT_TOKEN).
-
-    Register a New User:
-
-        POST /api/auth/register
-
-        Request Body Example: {"username": "johndoe", "password": "securePass123"}
-
-        Success Response: 201 Created
-
-    Login User & Obtain JWT:
-
-        POST /api/auth/login
-
-        Request Body Example: {"username": "johndoe", "password": "securePass123"}
-
-        Success Response: 200 OK (Includes the JWT in the token field)
-
-        {
-          "token": "eyJhbGciOiJIUzUxMiJ9...", // Your JWT
-          "type": "Bearer",
-          "id": 1,
-          "username": "johndoe",
-          "roles": ["ROLE_USER"]
-        }
-
-
-✍️ Blog Post Management (/api/posts)
-
-    Create Post: (POST /api/posts) - Requires authenticated user (ROLE_USER or ROLE_ADMIN). Author is automatically set.
-
-    Get All Posts: (GET /api/posts) - Publicly accessible.
-
-    Get Post by ID: (GET /api/posts/{id}) - Publicly accessible.
-
-    Update Post: (PUT /api/posts/{id}) - Requires authenticated user (ROLE_USER or ROLE_ADMIN).
-
-    Delete Post: (DELETE /api/posts/{id}) - Requires authenticated user (ROLE_USER or ROLE_ADMIN).
-
-🏷️ Category & Tag Management (/api/categories, /api/tags)
-
-Similar CRUD operations are available for Categories and Tags. GET requests are publicly accessible, while POST, PUT, and DELETE requests require an authenticated user with ROLE_USER or ROLE_ADMIN.
-📜 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+```sh
+mvn spring-boot:run
