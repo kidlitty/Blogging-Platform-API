@@ -1,6 +1,5 @@
 <div align="center">
   <br />
-  <img src="https://raw.githubusercontent.com/panacloud-modern-apis-apps/learn-nextjs-13-and-spring-boot-3/main/11_learn-spring-boot-3/01_creating-a-modern-blogging-platform-api-with-spring-boot/images/spring-boot-logo.png" alt="Logo" width="120" height="120">
   <h1 align="center">Modern Blogging Platform API</h1>
   <p align="center">
     A robust RESTful API for a complete blogging platform, built with Java and the Spring Boot framework.
